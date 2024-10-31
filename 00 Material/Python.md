@@ -6,7 +6,7 @@
 ## Index
 
 - Introduction
-- Common Features of Every Language
+- Core Features of Every Programming Language
 - Variable
 - Data Types
 - String
@@ -137,16 +137,17 @@ a = "Ten"; // Error
 ---
 
 <details>
-<summary>Common Features of Every Language</summary>
+<summary>Core Features of Every Programming Language</summary>
 
-## Common Features of Every Language
+## Core Features of Every Programming Language
 
-1. variables
-2. conditions
-3. loops
-4. switch
-5. functions
-6. classes
+1. Variables
+2. Conditions
+3. Loops
+4. Switch Statements
+5. Functions
+6. Classes
+
 </details>
 
 ---
@@ -156,9 +157,11 @@ a = "Ten"; // Error
 
 ### Variable
 
-Variables are like containers. we can use these containers to store data during program execution. we can mention a name for identify a particular container. So those named Containers are called variables.
-we can manipulate the data in the containers by referring that variable name.
-we can store different types of data in the containers. In programming languages, we have some categories in data.
+- Variables are used to store data during program execution.
+- Variables are like containers. we can use these containers to store data during program execution.
+- we can mention a name for identify a particular container. So those named Containers are called variables.
+- we can manipulate the data in the containers by referring that variable name.
+- we can store different types of data in the containers. In programming languages, we have some categories in data.
 
 Python supports various data types:
 
@@ -193,15 +196,35 @@ print(my_variable)  # Ten
 
 ## Datatypes
 
-The datatype determines how the data can be used in the program.
+- The Datatypes determines how the value or data can be used in the program.
+- For example, mathematical operations can be performed with integer or float types of data.
 
-- For example, mathematical operations can be done on Integer and Float types of data.
+In Programming languages Datatypes are two types :
 
-1. String
-2. Integer
-3. Float
-4. Boolean
-5. None
+1. Primitive Datatypes
+2. Reference Datatypes
+
+### Primitive Datatypes
+
+- Primitives are immutable datatypes.
+- Primitives are passed by value (It stores copy of data).
+- These are stores in Static-memory.
+  - String
+  - Integer
+  - Float
+  - Boolean
+  - None
+
+### Reference Datatypes
+
+- References are mutable datatypes.
+- References are passed by reference.
+- These are stored in the Heap-Memory.
+- We can modify data in the Reference datatype.
+  - Arrays
+  - Objects
+  - Sets
+  - Maps
 
 ### Datatype Checking
 
@@ -235,12 +258,12 @@ Any number with a decimal point is called float datatype.
 
 #### Boolean
 
-If we have Only 2 possible options to select either `True` or `False`.  
-python considered `True` and `False` are boolean values.
+- If we have Only 2 possible options to select either `True` or `False`.
+- python considered `True` and `False` are boolean values.
 
 #### None
 
-It is used to **no value** or **nothing**.
+- It is used to **no value** or **nothing**.
 
 ```py
 my_variable = None
@@ -294,17 +317,17 @@ print("Sum: " + str(result))  # Sum: 5
 
 ### Types of Variables
 
-The scope of a variable is the region in which that variable can be accessed.
+We give specific area to variable,and it can only be accessed within that area.
 
 1. Local Variable
 2. Global Variable
 
 #### Local Variable
 
-If a variable is declared inside a function then that type of variable is called Local Variable.
-we can access these Local Variables only within that particular block of code.
-If the value of the local variable is modified in one function, then that changes are not reflected in another function.
-we can convert a local variable to a global variable by using `global` keyword before the variable.
+- If a variable is declared inside a function then that type of variable is called Local Variable.
+- we can access these Local Variables only within that particular block of code.
+- If the value of the local variable is modified in one function, then that changes are not reflected in another function.
+- we can convert a local variable to a global variable by using `global` keyword before the variable.
 
 ```py
 def my_function():
@@ -321,9 +344,9 @@ print(my_variable)  # 10
 
 #### Global Variables
 
-If a variable is declared outside a function then that variable is called Global variable.
-These Global Variables can be accessed at any part of the code including Functions also.
-If the value of the global variable is modified inside a function then that changes are reflected in the rest of the program.
+- If a variable is declared outside a function then that variable is called Global variable.
+- These Global Variables can be accessed at any part of the code including Functions also.
+- If the value of the global variable is modified inside a function then that changes are reflected in the rest of the program.
 
 ```py
 
@@ -948,11 +971,11 @@ print("snake_case")  # snake_case
 
 ## Functions
 
-A **Function** is a block of reusable code to perform a specific action.
-Functions help us in using existing code without writing it every time when we need it. A Function is executed when calls it.
-We can use the same code many times with different arguments, to produce different results.
-
-A function can be defined using a keyword `def`. A function is uniquely identified by the function_name.
+- A function is a block of reusable code to perform a specific action.
+- Functions help us in using existing code without writing it every time we need it. A Function is executed when calls it.
+- We can define the code once, and use it many times.
+- We can call a function with different arguments to get different outputs.
+- A function can be defined using a keyword `def`. A function is uniquely identified by the function_name.
 
 ```py
 # Function Definition
@@ -1121,8 +1144,8 @@ In Python, there are four built-in data structures :
 
 ## List
 
-An Array holds an ordered collection of items.  
-**List** is the Mutable Data Structure.
+- An Array holds an ordered collection of items.
+- **List** is the Mutable Data Structure.
 
 ![list](https://res.cloudinary.com/dwrwbjd3h/image/upload/v1711470720/portfolio/markdown/python/data_structures/list.webp)
 
@@ -1431,8 +1454,8 @@ print(deep_copy)     # [1000, [2000, 3], 4]
 
 ## Tuple
 
-A **tuple** holds an ordered collection of items.
-A tuple is an immutable object, i.e. we cannot change the items of the tuple after creation. we can use Read-Only purpose.
+- A **tuple** holds an ordered collection of items.
+- A tuple is an immutable object, i.e. we cannot change the items - of the tuple after creation. we can use Read-Only purpose.
 
 ### Creating a Tuple
 
@@ -1528,7 +1551,7 @@ print(set_a)  # {'b', 'a', 'c'}  # set removes the duplicates
 ```
 
 ```py
-# Datastructures
+# Data structures
 # set
 
 """
@@ -1804,7 +1827,8 @@ print("=================")
 
 ## Dictionary
 
-A Dictionary is an unordered collection of items. Every dictionary item is a **Key-Value** pair.
+- A Dictionary is an unordered collection of items.
+- Every dictionary item is a **Key-Value** pair.
 
 ### create a Dictionary:
 
@@ -2071,6 +2095,7 @@ print("===================")
 
 1. Conditional Statements
 2. Looping Statements
+3. Jumping Statements
 </details>
 
 ---
@@ -2659,7 +2684,7 @@ Proper usage of **OOPs** concepts helps us build well-organized systems that are
 
 ### The advantages of OOPs
 
-- Easier way to analyse
+- Easier way to analyze
 - Re-usability of code through **inheritance**
 - Effective problem solving
 
@@ -2967,10 +2992,10 @@ for num in number_generator(5):
 
 ### Object in Python
 
-In general, anything that can be assigned to a variable in Python is referred to as an object.
-Strings, Integers, Floats, Lists, Functions, Modules etc... are all objects.
-Every object that you use in a Python program will be stored in Computer Memory.
-The unique id will be related to the location where the object is stored in the Computer Memory.
+- In general, anything that can be assigned to a variable in Python is referred to as an object.
+- Strings, Integers, Floats, Lists, Functions, Modules etc... are all objects.
+- Every object that you use in a Python program will be stored in Computer Memory.
+- The unique id will be related to the location where the object is stored in the Computer Memory.
 
 ### Modules in Python
 
